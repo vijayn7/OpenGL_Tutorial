@@ -26,7 +26,7 @@
                 "command": "bash",
                 "args": [
                     "-c",
-                    "make"
+                    "g++ -o main src/main.cpp -I/opt/homebrew/include -L/opt/homebrew/lib -lglfw -framework OpenGL -Wno-deprecated-declarations"
                 ]
             }
         },
@@ -51,7 +51,7 @@
                 "command": "bash",
                 "args": [
                     "-c",
-                    "'make run'"
+                    "g++ -o main src/main.cpp -I/opt/homebrew/include -L/opt/homebrew/lib -lglfw -framework OpenGL -Wno-deprecated-declarations && ./main"
                 ]
             }
         },
@@ -76,7 +76,7 @@
                 "command": "bash",
                 "args": [
                     "-c",
-                    "'make clean'"
+                    "rm main"
                 ]
             }
         }
