@@ -4,6 +4,8 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+#include <iostream>
+
 int main(void)
 {
     GLFWwindow* window;
@@ -29,6 +31,8 @@ int main(void)
         glfwTerminate();
         return -1;
     }
+
+    std::cout << glGetString(GL_VERSION) << std::endl;
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
