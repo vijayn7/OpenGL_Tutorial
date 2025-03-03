@@ -26,7 +26,7 @@
                 "command": "bash",
                 "args": [
                     "-c",
-                    "g++ -o main src/main.cpp -I/opt/homebrew/include -L/opt/homebrew/lib -lglfw -framework OpenGL -Wno-deprecated-declarations"
+                    "g++ -o main src/main.cpp -I/opt/homebrew/include -L/opt/homebrew/lib -lglfw -lGLEW -framework OpenGL -Wno-deprecated-declarations"
                 ]
             }
         },
@@ -51,7 +51,7 @@
                 "command": "bash",
                 "args": [
                     "-c",
-                    "g++ -o main src/main.cpp -I/opt/homebrew/include -L/opt/homebrew/lib -lglfw -framework OpenGL -Wno-deprecated-declarations && ./main"
+                    "g++ -o main src/main.cpp -I/opt/homebrew/include -L/opt/homebrew/lib -lglfw -lGLEW -framework OpenGL -Wno-deprecated-declarations && ./main"
                 ]
             }
         },
